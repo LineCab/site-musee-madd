@@ -1,224 +1,231 @@
 <!DOCTYPE html>
 
-    <html lang="fr">
+<html lang="fr">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./style/reset.css">
-        <link rel="stylesheet" href="./style/style.css">
-        <title>Acceuil MADD Bordeaux</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Acceuil MADD Bordeaux</title>
+</head>
 
-    <body>
-        <!-- Partie header-->
-        <header> 
-            <div class="titre-acceuil">
-                <img src="./Images/logo_MADD_noir.webp" alt="logo du MADD" width="20%">
-                <h1>MADD BORDEAUX</h1>
-                <p class="soustitre-accueil">Musée des arts décoratifs et du design</p>
+<body>
+    <!-- Partie header-->
+    <header>
+        <div class="titre-acceuil">
+            <img src="./Images/logo_MADD_noir.webp" alt="logo du MADD" width="20%">
+            <h1>MADD BORDEAUX</h1>
+            <p class="soustitre-accueil">Musée des arts décoratifs et du design</p>
+        </div>
+
+        <!--  parti nav Bar -->
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Le Madd</a></li>
+                <li><a href="#">Expositions</a></li>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">Agenda</a></li>
+                <li><a href="#" class="billeterie">Billeterie</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Partie expositions -->
+        <section class="expositions"> <!-- section de toute la zone expositions -->
+            <article class="expostion_jaune"> <!-- article de la première exposition -->
+                <div class="exposition_contenu_gauche"> <!-- div de la partie jaune -->
+                    <h3 class="nanda_vigo">
+                        Nanda Vigo, l'espace intérieur
+                    </h3>
+                    <p class="text_nanda_vigo">
+                        Découvrez le magnifique travail de <b>Nanda Vigo</b>, à travers des installations immersives.
+                    </p>
+                    <button class="bouton_billet_1">Billet</button>
+                </div>
+                <!-- la photo 1 -->
+                <!--<div class="image_escalier_nanda_vigo"></div>-->
+                <img class="image_escalier" src="Images/escalier-nanda-vigo.webp" alt="Escalier, Nanda vigo">
+            </article>
+
+            <article class="exposition_droite"> <!-- article de la deuxième exposition -->
+                <!--la photo 2 -->
+                <img class="image_chaussure" src="./Images/mur-chaussure.webp" alt="Playground, le design des sneakers"
+                    width="200px">
+                <div class="exposition_contenue_droit"> <!-- div de la partie orange -->
+                    <h3 class="h3_droite">
+                        Playground, le design des sneakers
+                    </h3>
+                    <p class="exposition_text_droit">
+                        Découvrez les marqueurs forts de ce qui constitue <b>l’Histoire des sneakers.</b>
+                    </p>
+                    <button class="bouton_billet bouton_billet_gauche">Billet</button>
+                </div>
+            </article>
+
+            <article class="expostion_gauche exposition_porcelaine"> <!-- article de la troisième exposition -->
+                <div class="contenue_porcealien"> <!-- div de la partie grise -->
+                    <h3 class="histoire_pocelaine">
+                        L'histoire de la porcelaine de Bordeaux
+                    </h3>
+                    <p class="texte_porcelaine">
+                        L’exposition évoque l’histoire éphémère mais incroyablement féconde de la <b>manufacture des
+                            Terres de Bordes.</b>
+                    </p>
+                    <button class="bouton_billet bouton_billet_3">Billet</button>
+                </div>
+                <!--la photo 3-->
+                <img class="image_porcelaine" src="/Images/Porcelaines_madd-bordeaux_-_I._Gaspar_Ibeas_8_BD_1.webp"
+                    alt="L'histoire de la porcelaine de Bordeaux" width="200px">
+            </article>
+        </section>
+
+
+        <!-- partie expositions à venir -->
+        <section class="agenda">
+            <h2>Expositions à venir</h2>
+            <div class="exposition-carousel">
+                <div class="carousel-item">
+                    <div class="exposition-agenda">
+                        <img src="./Images/chronique-du-vivant.webp" alt="chronique du vivant">
+                        <time datetime="2024-10-15">15/10</time>
+                        <p>Chronique du vivant</p>
+                    </div>
+                </div>
+                <div class="carousel-item selected">
+                    <div class="exposition-agenda">
+                        <img src="./Images/memphis.webp" alt="memphis">
+                        <time datetime="2024-12-26">26/12</time>
+                        <p>Memphis</p>
+                        <a href="#">
+                            <button>En savoir plus</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="exposition-agenda">
+                        <img src="./Images/La-Gambiarra.webp" alt="la Gambierra">
+                        <time datetime="2024-02-03">03/02</time>
+                        <p>La Gambierra</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="exposition-agenda">
+                        <img src="./Images/Empereur-Napoleon.webp" alt="Empereur Napoleon">
+                        <time datetime="2025-04-10">10/04</time>
+                        <p>Napoléon III et Eugènie reçoivent à Fontainebleau</p>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <!--  parti nav Bar -->
-            <nav>
-                <ul class="menu">
-                    <li><a href="#">Le Madd</a></li>
+        <!-- Partie présentation madd -->
+        <section class="bienvenue">
+            <div class="box-bienvenue">
+                <div class="bienvenueGauche">
+                    <h2>Bienvenue au Madd</h2>
+                    <p>Le tout <b>nouveau</b> musée Madd ouvre ses portes ! </p>
+                    <p>Après des mois de <b>travaux</b>, notre usée a été <b>transformé</b> en un lieu
+                        d'<strong>art</strong> et de <strong>design</strong> inspirant. Explorez nos collections
+                        permanentes riche en <b>chefs-d'oeuvre</b> et découvrez des expositions temooraires captivantes.
+                        Venez vous imprégner de la <b>créativité</b> et de la <b>culture</b> dans un cadre élégant, et
+                        découvrez l'art sous un nouveau jour. </p>
+                </div>
+                <div class="bienvenueDroite">
+                    <img class="imageChateau" src="/images/illuMadd.webp" alt="" width="90%">
+                    <button>En savoir plus</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partie galerie -->
+        <section class="oeuvres">
+            <h2>Les oeuvres</h2>
+            <div class="galerie">
+                <div class="image-galerie1"></div>
+                <div class="image-galerie2"></div>
+                <div class="image-galerie3"></div>
+                <div class="image-galerie4"></div>
+                <div class="image-galerie5"></div>
+                <div class="image-galerie6"></div>
+                <div class="image-galerie7"></div>
+                <div class="image-galerie8"></div>
+                <div class="image-galerie9"></div>
+            </div>
+            <a href="#"><button class="button">Découvrir</button></a>
+        </section>
+
+        <!-- partie info pratique -->
+        <section class="informations">
+            <h2 class="infos-pratiques-titre">Infos pratiques</h2>
+            <br />
+            <div class="infos">
+                <h4 class="adresse-titre"><b>Adresse</b></h4>
+                <p class="Adresse">39 RUE BOUFFARD, 33000 BORDEAUX</p>
+                <h4><b>Bus</b></h4>
+                <p class="Bus">PLACE DE LA BOURSE (ligne 7)</p>
+                <h4><b>Tram</b></h4>
+                <p class="Tram">GAMBETTA / HOTEL DE VILLE (tram 8)</p>
+                <button class="button en-savoir-plus">Ouvrir dans maps</button>
+            </div>
+            <div class="image-map">
+                <img src="Images/Mape.webp" alt="">
+            </div>
+        </section>
+    </main>
+
+    <!-- partie footer -->
+    <footer>
+        <div class="footer">
+            <img src="./Images/logo-madd-blanc.webp" alt="logo du musée MADD" width="200px">
+            <nav class="menu-et-reseaux-footer">
+                <ul class="menu-footer">
+                    <li><a href="#">LeMadd</a></li>
                     <li><a href="#">Expositions</a></li>
                     <li><a href="#">Collections</a></li>
                     <li><a href="#">Agenda</a></li>
-                    <li><a href="#" class="billeterie">Billeterie</a></li>
+                    <li><a href="#">Billeterie</a></li>
+                </ul>
+                <ul class="reseaux-footer">
+                    <li><a href="#"><img src="/Images/facebook.webp" alt="facebook"></a></li>
+                    <li><a href="#"><img src="/Images/YouTube.webp" alt="youtube"></a></li>
+                    <li><a href="#"><img src="/images/Insta.webp" alt="instagram"></a></li>
+                    <li><a href="#"><img src="/Images/Twitter.webp" alt="twitter"></a></li>
                 </ul>
             </nav>
-        </header>
+            <address>
+                <h4>Contact</h4>
+                <a href="tel:+33556101400">05 56 10 14 00</a>
+                <a href="mailto:madd@mairie-bordeaux.fr">madd@mairie-bordeaux.fr</a>
+                <p>39 rue Bouffard, 33000 Bordeaux </p>
+            </address>
+            <div class="horaire-footer">
+                <h4>Horaires</h4>
+                <p>Lundi au dimanche : 9h30 / 18h30</p>
+                <p>Fermeture de la billeterie à 17h30</p>
+                <p>Évacuation des salles à 18h</p>
+            </div>
+            <div class="tarif-footer">
+                <h4>Tarifs</h4>
+                <p>Plein tarif 12€ / Tarif réduit 10€</p>
+                <p>Gratuit pour les moins de 18 ans</p>
+                <p>Gratuit tous les dimanches</p>
+            </div>
+            <nav class="mentions-legales-footer">
+                <ul>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Données personnelles</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Accessibilité</a></li>
+                    <li><a href="#">Crédits</a></li>
+                    <li><a href="#">Crédits photographiques</a></li>
+                </ul>
+            </nav>
+            <p class="copyright"> © 2023 Musée des Arts Décoratifs et du Design </p>
+        </div>
+    </footer>
+</body>
 
-        <main>
-            <!-- Partie expositions -->
-            <section class="expositions"> <!-- section de toute la zone expositions -->
-                <article class="expostion_jaune"> <!-- article de la première exposition -->
-                    <div class="exposition_contenu_gauche"> <!-- div de la partie jaune -->
-                        <h3 class="nanda_vigo">
-                            Nanda Vigo, l'espace intérieur
-                        </h3>
-                        <p class="text_nanda_vigo">
-                            Découvrez le magnifique travail de <b>Nanda Vigo</b>, à travers des installations immersives. 
-                        </p>
-                        <button class="bouton_billet_1">Billet</button>
-                    </div>
-                    <!-- la photo 1 -->
-                    <!--<div class="image_escalier_nanda_vigo"></div>-->
-                    <img class="image_escalier" src="Images/escalier-nanda-vigo.webp">
-                </article>
-
-                <article class="exposition_droite"> <!-- article de la deuxième exposition -->
-                    <!--la photo 2 -->
-                    <img class="image_chaussure" src="./Images/mur-chaussure.webp" alt="Playground, le design des sneakers" width="200px">
-                    <div class="exposition_contenue_droit"> <!-- div de la partie orange -->
-                        <h3 class="h3_droite">
-                            Playground, le design des sneakers
-                        </h3>
-                        <p class="exposition_text_droit">
-                            Découvrez les marqueurs forts de ce qui constitue <b>l’Histoire des sneakers.</b>
-                        </p>
-                        <button class="bouton_billet bouton_billet_gauche">Billet</button>
-                    </div>
-                </article>
-
-                <article class="expostion_gauche exposition_porcelaine"> <!-- article de la troisième exposition -->
-                    <div class="contenue_porcealien"> <!-- div de la partie grise -->
-                        <h3 class="histoire_pocelaine">
-                            L'histoire de la porcelaine de Bordeaux
-                        </h3>
-                        <p class="texte_porcelaine">
-                            L’exposition évoque l’histoire éphémère mais incroyablement féconde de la <b>manufacture des Terres de Bordes.</b>
-                        </p>
-                        <button class="bouton_billet bouton_billet_3">Billet</button>
-                    </div>
-                    <!--la photo 3-->
-                    <img class="image_porcelaine" src="/Images/" alt="L'histoire de la porcelaine de Bordeaux" width="200px">
-                </article>
-            </section>
-
-
-            <!-- partie expositions à venir -->
-            <section class="agenda">
-                <h2>Expositions à venir</h2>
-                <div class="exposition-carousel">
-                    <div class="carousel-item">
-                        <div class="exposition-agenda">
-                            <img src="./Images/chronique-du-vivant.webp" alt="chronique du vivant">
-                            <time datetime="2024-10-15">15/10</time>
-                            <p>Chronique du vivant</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item selected">
-                        <div class="exposition-agenda">
-                            <img src="./Images/memphis.webp" alt="memphis">
-                            <time datetime="2024-12-26">26/12</time>
-                            <p>Memphis</p>
-                            <a href="#">
-                                <button>En savoir plus</button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="exposition-agenda">
-                            <img src="./Images/La-Gambiarra.webp" alt="la Gambierra">
-                            <time datetime="2024-02-03">03/02</time>
-                            <p>La Gambierra</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="exposition-agenda">
-                            <img src="./Images/Empereur-Napoleon.webp" alt="Empereur Napoleon">
-                            <time datetime="2025-04-10">10/04</time>
-                            <p>Napoléon III et Eugènie reçoivent à Fontainebleau</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Partie présentation madd -->
-            <section class="bienvenue">
-                <div class="box-bienvenue">
-                    <div class="bienvenueGauche">
-                        <h2>Bienvenue au Madd</h2>
-                        <p>Le tout <b>nouveau</b> musée Madd ouvre ses portes ! </p>
-                        <p>Après des mois de <b>travaux</b>, notre usée a été <b>transformé</b> en un lieu d'<strong>art</strong> et de <strong>design</strong> inspirant. Explorez nos collections permanentes riche en <b>chefs-d'oeuvre</b> et découvrez des expositions temooraires captivantes. Venez vous imprégner de la <b>créativité</b> et de la <b>culture</b> dans un cadre élégant, et découvrez l'art sous un nouveau jour. </p>
-                    </div>
-                    <div class="bienvenueDroite"> 
-                        <img class="imageChateau" src="/images/illuMadd.webp" alt="" width="90%">
-                        <button>En savoir plus</button>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Partie galerie -->
-            <section class="oeuvres">
-                <h2>Les oeuvres</h2>
-                <div class="galerie">
-                    <div class="image-galerie1"></div>
-                    <div class="image-galerie2"></div>
-                    <div class="image-galerie3"></div>
-                    <div class="image-galerie4"></div>
-                    <div class="image-galerie5"></div>
-                    <div class="image-galerie6"></div>
-                    <div class="image-galerie7"></div>
-                    <div class="image-galerie8"></div>
-                    <div class="image-galerie9"></div>
-                </div>
-                <a href="#"><button class="button">Découvrir</button></a>
-            </section>
-
-            <!-- partie info pratique -->
-            <section class="informations">
-                <h2 class="infos-pratiques-titre">Infos pratiques</h2>
-                <br/>
-                <div class="infos"> 
-                    <h4 class="adresse-titre"><b>Adresse</b></h4>
-                    <p class="Adresse">39 RUE BOUFFARD, 33000 BORDEAUX</p>
-                    <h4><b>Bus</b></h4>
-                    <p class="Bus">PLACE DE LA BOURSE (ligne 7)</p>
-                    <h4><b>Tram</b></h4>
-                    <p class="Tram">GAMBETTA / HOTEL DE VILLE (tram 8)</p>
-                    <button class="button en-savoir-plus">Ouvrir dans maps</button>
-                </div>
-                <div class="image-map">
-                    <img src="Images/Mape.webp" alt="">
-                </div>
-            </section>
-
-            <!-- partie footer -->
-            <footer>
-                <div class="footer">
-                    <img src="./Images/logo-madd-blanc.webp" alt="logo du musée MADD" width="200px">
-                    <nav class="menu-et-reseaux-footer">
-                        <ul class="menu-footer">
-                            <li><a href="#">LeMadd</a></li>
-                            <li><a href="#">Expositions</a></li>
-                            <li><a href="#">Collections</a></li>
-                            <li><a href="#">Agenda</a></li>
-                            <li><a href="#">Billeterie</a></li>
-                        </ul>
-                        <ul class="reseaux-footer">
-                            <li><a href="#"><img src="/Images/facebook.webp" alt="facebook"></a></li>
-                            <li><a href="#"><img src="/Images/YouTube.webp" alt="youtube"></a></li>
-                            <li><a href="#"><img src="/images/Insta.webp" alt="instagram"></a></li>
-                            <li><a href="#"><img src="/Images/Twitter.webp" alt="twitter"></a></li>
-                        </ul>
-                    </nav>
-                    <address>
-                        <h4>Contact</h4>
-                        <a href="tel:+33556101400">05 56 10 14 00</a>
-                        <a href="mailto:madd@mairie-bordeaux.fr">madd@mairie-bordeaux.fr</a>
-                        <p>39 rue Bouffard, 33000 Bordeaux </p>
-                    </address>
-                    <div class="horaire-footer">
-                        <h4>Horaires</h4>
-                        <p>Lundi au dimanche : 9h30 / 18h30</p>
-                        <p>Fermeture de la billeterie à 17h30</p>
-                        <p>Évacuation des salles à 18h</p>
-                    </div>
-                    <div class="tarif-footer">
-                        <h4>Tarifs</h4>
-                        <p>Plein tarif 12€ / Tarif réduit 10€</p>
-                        <p>Gratuit pour les moins de 18 ans</p>
-                        <p>Gratuit tous les dimanches</p>
-                    </div>
-                    <nav class="mentions-legales-footer">
-                        <ul>
-                            <li><a href="#">Mentions légales</a></li>
-                            <li><a href="#">Données personnelles</a></li>
-                            <li><a href="#">Cookies</a></li>
-                            <li><a href="#">Accessibilité</a></li>
-                            <li><a href="#">Crédits</a></li>
-                            <li><a href="#">Crédits photographiques</a></li>
-                        </ul>
-                    </nav>
-                    <p class="copyright"> © 2023 Musée des Arts Décoratifs et du Design </p>
-                </div>
-            </footer>
-
-        </body>
-    </main>
 </html>

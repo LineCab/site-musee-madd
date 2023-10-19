@@ -12,6 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 0;
 }
 
 h1{
@@ -49,16 +50,7 @@ b {
     font-weight: bold;
 }
 
-/* p { 
-    font-size: 25px;
-    font-family: "Inter", sans-serif;
-    font-weight: 00;
-} */
-
-/* img {
-    max-width: 100%;
-    height: auto;
-} */
+/* ------ CSS DE LA PAGE ACCEUIL ------ */
 
 .titre-acceuil{
     margin-bottom: 30px;
@@ -564,8 +556,6 @@ b {
 /* ----------  Footer ----------- */
 
 footer{
-    position: absolute;
-    bottom: 1;
     width: 100%;
     background-color: #2B2828;
     color: #EDEDED;
@@ -643,4 +633,189 @@ footer address{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+/* ------ CSS DE LA PAGE EXPOSITION ------ */
+
+/* Style de toute la page */
+b{
+    font-weight: bold;
+}
+strong{
+    font-weight: bold;
+}
+.container{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.espace-entre-deux-paragraphe{
+    padding-bottom: 20px;
+}
+.lettrine:first-of-type:first-letter{
+    float:left;
+    font-size: 2em;
+    padding: 0 0.3em 0 0;
+}
+
+/* partie avec fond bleu */
+h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+}
+h3{
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    font-size: 4rem;
+    width: 50%;
+}
+
+.titre-nom-et-date{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.nom-et-date-expo{
+    display: flex;
+    flex-direction: row;
+    padding: 60px 40px;
+    width: 100%;
+    align-items: center;
+}
+
+.fond-bleu{
+    background-color: #85DEE3;
+}
+
+
+/* partie sur la description de Nanda Vigo */
+.article-description-Nanda-Vigo{
+    display: flex;
+    gap: 120px;
+    padding-left: 60px;
+    padding-right: 60px;
+    align-items: center;
+    padding-top: 150px;
+}
+.fond-jaune{
+    background-color: #FFD74A;
+    width: 23rem;
+    height: 26rem;
+    position: absolute;
+    transform: translate(-4rem, -5rem);
+    z-index: -1;
+}
+.article-description-Nanda-Vigo img{
+    width: 27rem;
+}
+.article-description-Nanda-Vigo p{
+    max-width: 45vw;
+    font-size: 1.5rem;
+}
+
+/* parie citation Nanda Vigo */
+.padding-citation{
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 60px;
+}
+.bold-text {
+    font-weight: bold;
+    font-family: 'SemiBold', sans-serif;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.italic-text {
+    font-style: italic;
+    font-family: 'LightItalic', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 1.7rem;
+}
+
+
+/* partie verre aluminium */
+.fond-gris-image{
+    background-color: #ACB0B3;
+    width: 36rem;
+    transform: translate(14rem, 3rem);
+    z-index: -1;
+}
+.fond-gris-image img{
+    width: 42rem;
+    transform: translate(-10rem, -4rem);
+}
+.article-verre-aluminium{
+    margin-top: 100px;
+    display: flex;
+    gap: 120px;
+    padding-left: 60px;
+    padding-right: 60px;
+    align-items: center;
+    margin-bottom: 190px;
+}
+.article-verre-aluminium p{
+    width: 100%;
+    max-width: 25vw;
+    font-size: 1.5rem;
+}
+
+/* partie orange expérience sensorielle */
+.article-experience-sensorielle{
+    background-color: #FABC60;
+    margin-bottom: 150px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.elements-partie-sensorielle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 160px;
+}
+.elements-partie-sensorielle p{
+    font-size: 1.5rem;
+    padding-right: 100px;
+}
+.elements-partie-sensorielle img{
+    transform: translate(1rem, -4rem);
+    max-height: 28rem;
+}
+
+/* partie object iconique */
+.fond-rose{
+    background-color: #FFB2B2;
+    width: 36rem;
+    transform: translate(14rem, 3rem);
+    z-index: -1;
+}
+.fond-rose img{
+    width: 42rem;
+    transform: translate(-10rem, -4rem);
+}
+
+/* partie vidéo */
+.article-video{
+    background-color: #D9D9D9;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.elements-partie-video{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 160px;
+}
+.elements-partie-video p{
+    font-size: 1.5rem;
+    padding-right: 100px;
+}
+.elements-partie-video iframe{
+    transform: translate(1rem, -4rem);
+    width: 170rem;
 }
