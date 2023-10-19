@@ -982,8 +982,8 @@ footer address{
         grid-template-rows: repeat(8, 1fr);
         grid-gap: 20px;
         height: 1300px;
-        max-width: 1160px;
-        margin: 30px auto;
+        margin: auto auto;
+        padding: 40px 60px;
     }
     
     .image-galerie1{
@@ -1046,6 +1046,70 @@ footer address{
         width: 275px;
         background: #FFD911;
         border: none;
+    }
+
+    /* ----------  Section Infos pratique ----------- */
+
+    .informations{
+        background-color: #EDEDED;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-gap: 20px;
+        height: 700px;
+        max-width: 1160px;
+        margin: 30px auto;
+    }
+
+    .informations h2 {
+        grid-area: 1 / 1 / 2 / 7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px ;
+    }
+
+    .infos {
+        grid-area: 2 / 1 / 4 / 7;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .informations button{
+        grid-area: 6 / 1 / 7 / 7;
+        height: 55px;
+        width: 275px;
+        background: #FFD911;
+        border: none;
+    }
+
+    .image-map{
+        grid-area: 4 / 1 / 6 / 7; 
+        overflow: hidden;
+    }
+
+    .adresse-titre {
+        align-items: center;
+    }
+
+    .Adresse {
+        margin-bottom: 20px;
+    }
+
+    .Bus {
+        margin-bottom: 20px;
+    }
+
+    .Tram {
+        margin-bottom: 20px;
+    }
+
+    .button {
+        gap: 10px;
+        border-radius: 13px;
+        color: #000;
+        font-family: 'Inter', sans-serif;
+        font-size: 1rem;
     }
 }
 
