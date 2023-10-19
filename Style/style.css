@@ -427,55 +427,55 @@ b {
 }
 
 .image-galerie1{
-    background-image: url(/Images/image-herbe.png);
+    background-image: url(/Images/image-herbe.webp);
     grid-area: 1 / 1 / 7 / 4;
     background-size: cover;
 }
 
 .image-galerie2{
-    background-image: url(/Images/chaussure1.png);
+    background-image: url(/Images/chaussure1.webp);
     grid-area: 1 / 4 / 5 / 8;
     background-size: cover;
 }
 
 .image-galerie3{
-    background-image: url(/Images/Colonne_poele.png);
+    background-image: url(/Images/Colonne.webp);
     grid-area: 1 / 8 / 10 / 10;
     background-size: cover;
 }
 
 .image-galerie4{
-    background-image: url(/Images/trone.png);
+    background-image: url(/Images/trone.webp);
     grid-area: 1 / 10 / 9 / 13;
     background-size: cover;
 }
  
 .image-galerie5{
-    background-image: url(/Images/fontaine.png);
+    background-image: url(/Images/fontaine.webp);
     grid-area: 7 / 1 / 11 / 4;
     background-size: cover;
 }
 
 .image-galerie6{
-    background-image: url(/Images/chaise.png);
+    background-image: url(/Images/chaise.webp);
     grid-area: 5 / 4 / 11 / 8;
     background-size: cover;
 }
 
 .image-galerie7{
-    background-image: url(/Images/lampe.png);
+    background-image: url(/Images/lampe.webp);
     grid-area: 10 / 8 / 13 / 10;
     background-size: cover;
 }
 
 .image-galerie8{
-    background-image: url(/Images/combat.png);
+    background-image: url(/Images/combat.webp);
     grid-area: 9 / 10 / 13 / 13;
     background-size: cover;
 }
 
 .image-galerie9{
-    background-image: url(/Images/chaussures.png);
+    background-image: url(/Images/chaussures.webp);
     grid-area: 11 / 1 / 13 / 8;
     background-size: cover;
 }
