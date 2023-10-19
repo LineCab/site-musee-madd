@@ -527,16 +527,9 @@ b {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 25% 75%;
     grid-gap: 20px;
-    margin: auto 60px;
+    margin: auto auto;
     margin-bottom: 30px;
 }
-
-/* .infos-pratiques {
-    background-color: #EDEDED;
-    padding: 3em;
-    width: 100%;
-    grid-gap: 20px;
-} */
 
 .informations h2 {
     display: flex;
