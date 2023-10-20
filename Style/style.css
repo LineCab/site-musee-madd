@@ -883,6 +883,7 @@ footer address{
     .agenda {
         height: 500px;
         position: relative;
+        overflow: hidden;
     }
 
     .carousel-item:nth-last-child(1) {
@@ -892,7 +893,6 @@ footer address{
     .exposition-carousel {
         display: flex;
         width: 1200px;
-        overflow: hidden;
         white-space: nowrap;
         position: absolute;
         margin-top: 0;
