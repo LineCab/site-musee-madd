@@ -956,13 +956,10 @@ footer address{
     }
     
     .box-bienvenue{
-        display: grid;
-        width: 100vw;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-        grid-gap: 20px;
-        margin: auto auto;
-        padding: 40px 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px 60px;
     }
 
     .bienvenueDroite{
@@ -971,12 +968,11 @@ footer address{
     
     .img-illuMadd-mobile{
         width: 70%;
-        grid-area: 1 / 1 / 3 / 7;
         display: block;
         margin: auto auto;
     }
+
     .btn-decouvrir-mobile{
-        grid-area: 6 / 1 / 7 / 7;
         display: block;
         margin: auto auto;
         width: 226px;
@@ -984,11 +980,6 @@ footer address{
         border-radius: 13px;
         background: #FFD911;
         border: none;
-    }
-    
-    .bienvenueGauche {
-        display: block;
-        grid-area: 3 / 1 / 6 / 7;
     }
     
     /* ----- Section galerie ----- */
