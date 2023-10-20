@@ -1056,9 +1056,9 @@ footer address{
 
     .informations{
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(10, 1fr);
         margin: 30px 60px;
-        height: 650px;
+        height: max-content;
     }
 
     .informations h2 {
@@ -1070,7 +1070,7 @@ footer address{
     }
 
     .infos {
-        grid-area: 2 / 1 / 3 / 7;
+        grid-area: 2 / 1 / 11 / 7;
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(8, 1fr);
