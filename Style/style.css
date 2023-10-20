@@ -1116,10 +1116,10 @@ footer address{
 
     .carte-mobile{
         grid-area: 4 / 2 / 7 / 6; 
-        display: flex;
-        height: 200px;
-        margin: auto auto;
         overflow: hidden;
+        display: block;
+        height: 80%;
+        margin: auto auto;
     }
 
     .carte-desktop{
