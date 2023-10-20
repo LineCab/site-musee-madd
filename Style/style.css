@@ -499,6 +499,11 @@ p{
     border: none;
 }
 
+.animation-galerie:hover {
+    transform: scale(1.03);
+    transition: 0.3s ease-in;
+}
+
 /* ----------  Section Infos pratique ----------- */
 
 .informations{
@@ -886,10 +891,10 @@ footer address{
 
     .exposition-carousel {
         display: flex;
+        width: 1200px;
         overflow: hidden;
         white-space: nowrap;
         position: absolute;
-        width: 1200px;
         margin-top: 0;
         margin-left: 0;
         top: 56px;
