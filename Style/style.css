@@ -652,6 +652,10 @@ footer address{
 
 @media screen and (max-width: 992px){
 
+    body{
+        overflow-x: hidden;
+    }
+
     /* Menu mobile */
     .menu-desktop{
         display: none;
