@@ -12,6 +12,7 @@ body {
     align-items: center;
     flex-direction: column;
     margin: 0;
+    font-family:'Inter', sans-serif;
 }
 
 h1{
@@ -663,7 +664,6 @@ footer address{
 
     body{
         overflow-x: hidden;
-        font-family:'Inter', sans-serif;
     }
 
     /* Menu mobile */
