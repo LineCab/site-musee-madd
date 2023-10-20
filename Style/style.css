@@ -995,7 +995,7 @@ footer address{
         grid-gap: 20px;
         height: 1300px;
         margin: auto auto;
-        padding: 40px 60px;
+        padding: 40px 20px;
     }
     
     .image-galerie1{
@@ -1065,7 +1065,7 @@ footer address{
     .informations{
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(8, 1fr);
-        margin: 30px 60px;
+        margin: 30px 20px;
         height: max-content;
     }
 
@@ -1142,7 +1142,7 @@ footer address{
         grid-template-rows: repeat(33, 4%);
         grid-column-gap: 20px;
         grid-row-gap: 10px;
-        margin: auto 60px;
+        margin: auto 20px;
     }
     
     footer img{
