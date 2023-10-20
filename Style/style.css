@@ -1066,7 +1066,7 @@ footer address{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 20;
+        gap: 20px;
         padding: 30px 20px;
     }
 
@@ -1075,17 +1075,12 @@ footer address{
     }
 
     .infos {
-        /* grid-area: 2 / 1 / 9 / 7; */
-        /* display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(8, 1fr);*/
         gap: 20px;
         display: flex;
         flex-direction: column;
     }
 
     .Adresse {
-        /* grid-area: 1 / 2 / 2 / 6; */
         margin-left: 20px;
     }
 
@@ -1094,7 +1089,6 @@ footer address{
     }
 
     .Bus {
-        /* grid-area: 2 / 2 / 3 / 6; */
         margin-left: 20px; 
     }
 
@@ -1103,7 +1097,6 @@ footer address{
     }
 
     .Tram {
-        /* grid-area: 3 / 2 / 4 / 6;  */
         margin-left: 20px;
     }
 
@@ -1112,7 +1105,6 @@ footer address{
     }
 
     .carte-mobile{
-        /* grid-area: 4 / 2 / 7 / 6;  */
         overflow: hidden;
         display: block;
         max-width: 100%;
@@ -1131,7 +1123,7 @@ footer address{
     /* --- Section Footer --- */
 
     footer{
-        height: 1150px;
+        height: 1220px;
     }
 
     .footer{
@@ -1139,9 +1131,12 @@ footer address{
         height: fit-content;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(33, 4%);
-        grid-column-gap: 20px;
-        grid-row-gap: 10px;
+        grid-gap: 15px;
         margin: auto 20px;
+    }
+
+    .footer h3{
+        font-size: 1rem;
     }
     
     footer img{
