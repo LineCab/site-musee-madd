@@ -663,6 +663,7 @@ footer address{
 
     body{
         overflow-x: hidden;
+        font-family:'Inter', sans-serif;
     }
 
     /* Menu mobile */
