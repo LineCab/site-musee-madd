@@ -1133,6 +1133,7 @@ footer address{
 
     .footer{
         display: grid;
+        height: fit-content;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(33, 4%);
         grid-column-gap: 20px;
@@ -1195,6 +1196,7 @@ footer address{
     
     .copyright{
         grid-area: 33 / 1 / 34 / 7;
+        text-align: center;
         margin: auto auto;
     }
 }
