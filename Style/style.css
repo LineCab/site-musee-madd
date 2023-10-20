@@ -309,6 +309,7 @@ p{
     transform: scale(1.03);
     background-color: #585858;
     color: white;
+    cursor: pointer;
 }
 
 
@@ -381,6 +382,7 @@ p{
 }
 
 .bouton_en_savoir_plus:hover{
+    cursor: pointer;
     transform: scale(1.1);
     background-color: black;
     color: #FFD911;
@@ -442,11 +444,7 @@ p{
     transform: scale(1.1);
     background-color: black;
     color: #FFD911;
-}
-
-.bouton_en_savoir_plus:hover{
-    transform: scale(1);
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
 }
 
 /* ----------  Section Oeuvres ----------- */
@@ -541,6 +539,7 @@ p{
 .animation-galerie:hover {
     transform: scale(1.03);
     transition: 0.3s ease-in;
+    cursor: pointer;
 }
 
 /* ----------  Section Infos pratique ----------- */
