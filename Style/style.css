@@ -1145,7 +1145,7 @@ footer address{
         top: 56px;
         left: 50%;
         margin-left: -450px;
-        gap: 60px;
+        gap: 10px;
         justify-content: center;
     }
 
