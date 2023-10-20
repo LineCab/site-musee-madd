@@ -43,6 +43,10 @@ b {
     font-weight: bold;
 }
 
+p{
+    line-height: 1.7;
+}
+
 /* ------ CSS DE LA PAGE ACCEUIL ------ */
 
 .titre-acceuil{
