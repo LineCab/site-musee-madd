@@ -647,6 +647,10 @@ footer address{
 }
 
 @media screen and (max-width: 992px){
+
+    body{
+        max-width: 100vw;
+    }
         
     /* Partie expo jaune */
 
@@ -880,16 +884,34 @@ footer address{
     }
 
     /* ---- Section agenda ---- */
-    
+
+    .agenda {
+        height: 500px;
+        position: relative;
+    }
+
+    .carousel-item:nth-last-child(1) {
+        display: none;
+    }
+
     .exposition-carousel {
         display: flex;
         overflow: hidden;
         white-space: nowrap;
+        position: absolute;
+        width: 1200px;
+        margin-top: 0;
+        margin-left: 0;
+        top: 56px;
+        left: 50%;
+        margin-left: -600px;
+        gap: 30px;
+        justify-content: center;
     }
     
     .carousel-item {
         width: calc(25% - 60px);
-        margin-right: 60px;
+        margin-right: 0px;
     }
     
     .exposition-agenda {
@@ -1110,6 +1132,37 @@ footer address{
         color: #000;
         font-family: 'Inter', sans-serif;
         font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .agenda {
+        height: 440px;
+    }
+
+    .exposition-carousel {
+        width: 900px;
+        top: 56px;
+        left: 50%;
+        margin-left: -450px;
+        gap: 60px;
+        justify-content: center;
+    }
+
+    .exposition-agenda img {
+        height: 128px;
+    }
+
+    .exposition-carousel .selected img {
+        height: 224px;
+    }
+
+    .carousel-item {
+        margin-right: 0px;
+    }
+
+    .carousel-item:nth-last-child(1) {
+        display: none;
     }
 }
 
