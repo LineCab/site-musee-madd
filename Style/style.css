@@ -706,6 +706,11 @@ footer address{
         overflow-x: hidden;
     }
 
+    a{
+        text-decoration: none;
+        color: #000;
+    }
+
     /* Menu mobile */
     .menu-desktop{
         display: none;
