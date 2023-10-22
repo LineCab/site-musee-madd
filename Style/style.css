@@ -322,21 +322,31 @@ p{
 
 .agenda h2{
     text-align: center;
+    margin-bottom: 40px;
 }
 
-.exposition-carousel {
+.carousel-items {
     display: flex;
-    align-items: center;
-    width: 110%;
-    overflow: hidden;
-    white-space: nowrap;
-    margin-top: 40px;
-    margin-left: 60px;
+    height: 430px;
+    overflow-x: scroll;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel-items::-webkit-scrollbar {
+    width: 0px;
 }
 
 .carousel-item {
-    width: calc(25% - 60px);
+    flex: 1 0 350px;
+    margin-left: 1rem;
+    scroll-snap-align: start;
     margin-right: 60px;
+}
+
+.carousel-item img {
+    width: 100%;
+    object-fit: cover;
 }
 
 .exposition-agenda {
@@ -365,6 +375,11 @@ p{
 }
 
 .exposition-agenda button{
+    display: none;
+}
+
+.carousel-item:hover .exposition-agenda button{
+    display: initial;
     width: 150px;
     height: 35px;
     border-radius: 13px;
@@ -374,23 +389,17 @@ p{
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-/*Style pour l'article sélectionné */
-.exposition-carousel .selected {
-    width: calc(40% - 60px); 
-    transform: scale(1.1);
-}
-
-.exposition-carousel .selected img{
-    width: 100%;
-    height: 270px;
-    object-fit: cover;
-}
-
-.bouton_en_savoir_plus:hover{
+.carousel-item:hover .exposition-agenda button:hover{
     cursor: pointer;
     transform: scale(1.1);
     background-color: black;
     color: #FFD911;
+}
+
+.carousel-item:hover .exposition-agenda img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
 }
 
 /* ----------  Section bienvenue ----------- */
@@ -930,69 +939,11 @@ footer address{
     }
 
     /* ---- Section agenda ---- */
-
-    .agenda {
-        height: 500px;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .carousel-item:nth-last-child(1) {
-        display: none;
-    }
-
-    .exposition-carousel {
-        display: flex;
-        width: 1200px;
-        white-space: nowrap;
-        position: absolute;
-        margin-top: 0;
-        margin-left: 0;
-        top: 56px;
-        left: 50%;
-        margin-left: -600px;
-        gap: 30px;
-        justify-content: center;
-    }
-    
     .carousel-item {
-        width: calc(25% - 60px);
-        margin-right: 0px;
-    }
-    
-    .exposition-agenda {
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-        text-align: center;
-    }
-    
-    .exposition-agenda img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-    }
-    
-    .exposition-agenda time {
-        font-weight: bold;
-        margin: 10px 0;
-    }
-    
-    .exposition-agenda p {
-        font-size: 18px;
-        margin-bottom: 20px;
-    }
-    
-    .exposition-agenda button{
-        width: 150px;
-        height: 35px;
-        border-radius: 13px;
-        background: #FFD911;
-        border: none;
-    }
-    
-    .exposition-carousel .selected {
-        width: calc(40% - 60px); 
+        flex: 1 0 300px;
+        margin-left: 1rem;
+        scroll-snap-align: start;
+        margin-right: 30px;
     }
 
     /* ----- Section bienvenue ----- */
