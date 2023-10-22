@@ -585,6 +585,7 @@ p{
 .carte-desktop{
     grid-column-start: 7;
     grid-column-end: 12;
+    max-height: 300px;
     overflow: hidden;
 }
 
